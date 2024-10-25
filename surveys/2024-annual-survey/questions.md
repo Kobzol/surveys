@@ -26,7 +26,7 @@ Type: select one
 
 ## For previous Rust users
 
-### As you have indicated that you're not currently using Rust, why not?
+### As you have indicated that you're no longer using Rust, why did you stop using Rust?
 
 Type: select all that apply
 
@@ -36,17 +36,17 @@ Type: select all that apply
 - Too difficult to learn
 - Community was rude, unwelcoming, or otherwise off-putting
 - I prefer to use another language
-- I no longer have the opportunity to use Rust due to factors outside my control
-- I plan to use it in the future once an opportunity comes up
+- I no longer have the opportunity to use Rust due to factors outside of my control
 - Other
 
 ### Tell us more:
 
-Type: free form (optional)
+Type: free text
 
 > **SURVEY FLOW**
 >
 > Skip to `### Are you employed full- or part-time (including paid internships)?`
+
 
 ## For non-Rust users
 
@@ -61,19 +61,19 @@ Type: select all that apply
 - Too difficult to learn or learning will take too much time
 - Community was rude, unwelcoming, or otherwise off-putting
 - I prefer to use another language
-- I can't use Rust due to factors outside my control
+- I can't use Rust due to factors outside of my control
 - I haven't got around to it
 - Other
 
 ### Tell us more:
 
-Type: free form (optional)
+Type: free text
 
 > **SURVEY FLOW**
 >
 > Skip to `### Are you employed full- or part-time (including paid internships)?`
 
-## Rust usage and learning experience
+## Your Rust experience
 
 ### On average, how often do you use Rust?
 
@@ -94,6 +94,19 @@ Type: select one
 > those who program once a week but always in Rust and those who program daily but
 > use Rust once a week.
 
+### On average, how often do you do coding/design work in general?
+
+Type: select one
+
+- Daily or nearly so
+- Weekly or nearly so
+- Monthly or nearly so
+- Rarely
+
+> **justification**
+>
+> Could be interesting to understand the *absolute* coding/design experience of the cohort and then compare it with *relative* Rust experience, see comment: https://github.com/rust-lang/surveys/pull/234/files#r1347513327
+
 ### How would you rate your Rust expertise?
 
 Type: select one
@@ -108,7 +121,7 @@ Type: select one
 > Useful for cohort analysis, i.e., for other questions we can query if answers are significantly different for beginners vs advanced users.
 >
 > Previously this question was a 1-10 ranking. Having specific labels can help with consistency across responses. Additionally, having 10 choices
-> was too specific (i.e., what's the difference between a 7 and 8?) where as with the new answers, we have a better idea of what the differences 
+> was too specific (i.e., what's the difference between a 7 and 8?) where as with the new answers, we have a better idea of what the differences
 > between answers actually mean.
 
 ### When did you learn to program in Rust?
@@ -120,11 +133,11 @@ some other goal). If your learning process spans several of the listed time peri
 Type: select one (optional)
 
 - I'm still *actively* trying to learn Rust
-- During 2024
-- During 2022 or 2023
-- During 2020 or 2021
-- During 2018 or 2019
-- During 2017 or before
+- During 2023
+- During 2021 or 2022
+- During 2019 or 2020
+- During 2017 or 2018
+- During 2016 or before
 
 > **justification**
 >
@@ -137,42 +150,9 @@ Type: select one (optional)
 > It's also helpful to be more specific than an edition, and it's fairly easy to know which edition someone likely used based on the year they
 > learned Rust.
 
-### If you consumed learning material about Rust, which kind of material did you consume?
-
-Type: select all that apply (optional)
-
-- Books ("The Rust Programming Language", "Rust for Rustaceans", etc.)
-- Online exercises (Rustlings, 100 Exercises To Learn Rust, etc.)
-- Videos or live-streams
-- Blog posts
-- Documentation
-- Source code of Rust crates
-- Online courses, webinars
-- In-person training
-- University learning materials
-- Other (please specify)
-
-> **justification**
->
-> Getting data here seems helpful for guiding users / recommending public content.
-
-### Are you currently taking a course that uses or teaches Rust OR have you taken a course of this type in the last year?
-
-Type: select one (optional)
-
-- Yes, through a university, school, or other educational institution
-- Yes, through my employer, contractor, or consultancy
-- No
-
-> **justification**
->
-> This question is primarily used to funnel respondents into the more specific questions about the kinds of educational activities they've been a part of.
-
-## Technical questions
-
 ### Which operating systems do you use regularly for Rust development?
 
-**Note**: this is specifically about which systems you personally use for development, *not* all the 
+**Note**: this is specifically about which systems you personally use for development *not* all the
 systems you target.
 
 Type: select all that apply (optional)
@@ -211,14 +191,13 @@ Type: select all that apply (optional)
 - Android
 - Embedded platforms (with an operating system)
 - Embedded platforms (bare metal)
-- WebAssembly (for browsers)
-- WebAssembly (for other hosts)
+- WebAssembly
 - Explicitly platform-independent (e.g., a library which does not interact with the operating system)
 - Other (open response)
 
 > **justification**
 >
-> This question can be used to figure out roughly what systems are being targeted as well as 
+> This question can be used to figure out roughly what systems are being targeted as well as
 > what OS stack is being developed against (i.e., desktop/server OS, mobile OS, embedded OS, bare metal)
 >
 > We're using "Linux" here rather than "*nix" or similar, with the same
@@ -227,42 +206,14 @@ Type: select all that apply (optional)
 > We specifically care about the runtime environment being targeted. ISA and other machine specifics are
 > not what matters.
 
-### Which editor or IDE setup do you use with Rust code on a regular basis?
-
-Type: select all that apply (optional)
-
-- VS Code
-- vi/vim/neovim
-- IntelliJ/CLion/other JetBrains IDE + Rust plugin
-- Rust Rover (dedicated IntelliJ Rust IDE)
-- Emacs (or derivatives like Doom Emacs, Spacemacs, etc.)
-- Sublime Text
-- Visual Studio
-- Xcode
-- Atom
-- Helix
-- Other (open response)
-
-> **justification**
->
-> It is good to know which editor is the most preferred for Rust development. This
-> can change investment strategies for further IDE development.
->
-> Note: previously this question included different 'drivers' of the Rust IDE
-> experience (e.g., racer, rls, rust-analyzer). Development has consolidated on
-> rust-analyzer, and so it's not necessary to find out which is being used.
-> If we are curious how far along adoption of rust-analyzer is, we can ask that
-> in a separate question, though this is likely easier to find out through download
-> numbers.
-
 ### Which version(s) of Rust do you use for development?
 
 Type: select all that apply (optional)
 
 - Current stable version
 - Previous stable version
-- A specific version of stable Rust equal to or newer than 1.75
-- A specific version of stable Rust older than 1.75
+- A specific version of stable Rust equal to or newer than 1.67
+- A specific version of stable Rust older than 1.67
 - Beta release
 - Latest nightly
 - A specific version of nightly
@@ -272,9 +223,9 @@ Type: select all that apply (optional)
 
 > **justification**
 >
-> Together with the following question, we can better determine what the spread of 
+> Together with the following question, we can better determine what the spread of
 > version usage is across the community.
-> We ask specifically about version 1.75 since it is, at the time of the survey, the 
+> We ask specifically about version 1.67 since it is, at the time of the survey, the
 > version that was released ~1 year prior. Additionally, at the time of this writing
 > all major Linux distros have a version equal to or newer than this version.
 
@@ -305,171 +256,137 @@ Type: select all that apply (optional)
 
 Type: select one (optional)
 
-- 1.85 (nightly), and then every version from 1.83 to 1.0 in descending order, and "a pre-1.0 version"
+1.76 (nightly), 1.75 (nightly), and then every version from 1.74 to 1.0 in descending order, and "a pre-1.0 version"
 
 > **justification**
 >
 > To get real data on how many people use older versions of the toolchain to
 > inform discussion on MSRVs.
 
-### Do you agree with the following statements on Rust stability?
+### Which editor or IDE setup do you use with Rust code on a regular basis?
 
-Type: matrix (optional)
+Type: select all that apply (optional)
 
-Statements:
-
-- I can upgrade the *stable* compiler version without fear of my code failing to compile
-- I can upgrade the *nightly* compiler version without fear of my code failing to compile
-- Upgrading to a new *stable* compiler version requires either no changes or extremely small & easy changes to my code
-- Upgrading to a new *nightly* compiler version requires either no changes or extremely small & easy changes to my code
-
-Rating:
-
-- Agree
-- Disagree
-
-> **justification**
->
-> When want to get an impression of how stable the compiler *feels*. Impressions are more important than hard numbers as
-> not all users define stability in the same way the compiler does.
-
-### What is your opinion on how fast Rust evolves?
-
-We want to know how do you perceive the speed of development of the Rust language.
-
-Type: select one (optional)
-
-- Rust is already too complex, it should not add or stabilize more significant features
-- Rust changes too quickly, I wish it would slow down the pace of development
-- I am satisfied with the current pace of development
-- Rust changes too slowly, I wish it would add or stabilize features faster
-- I don't know or don't care
+- VS Code
+- vi/vim/neovim
+- IntelliJ/CLion/other JetBrains IDE + Rust plugin
+- Rust Rover (dedicated IntelliJ Rust IDE)
+- Emacs (or derivatives like Doom Emacs, Spacemacs, etc.)
+- Sublime Text
+- Visual Studio
+- Xcode
+- Atom
 - Other (open response)
 
 > **justification**
 >
-> We want to find out if people prefer stability and fewer changes, or if they want to see more features being
-> implemented or stabilized.
+> It is good to know which editor is the most preferred for Rust development. This
+> can change investment strategies for further IDE development.
+>
+> Note: previously this question included different 'drivers' of the Rust IDE
+> experience (e.g., racer, rls, rust-analyzer). Development has consolidated on
+> rust-analyzer, and so it's not necessary to find out which is being used.
+> If we are curious how far along adoption of rust-analyzer is, we can ask that
+> in a separate question, though this is likely easier to find out through download
+> numbers.
 
-### Which unimplemented (or nightly only) features are you looking for to be stabilized?
+### In your opinion, how would you prioritise work on the following aspects of Rust?
 
-Please mention *Rust compiler or standard library* features that are currently unstable (only available using a nightly release of the Rust compiler) or missing that would in your opinion be beneficial to the Rust ecosystem or to you. This list excludes other tooling around the compiler such as cargo, rustup, rustfmt, etc.
+Type: matrix (optional)
+
+Aspects:
+
+- Runtime performance
+- Compile times
+- Binary size
+- Memory usage (i.e., how much RAM rustc uses when compiling)
+- Disk space usage (e.g., the size of target folder)
+- Bugs in the compiler (i.e., ICEs a.k.a. internal compiler errors, miscompilations, etc.)
+- Compiler error messages
+- IDE experience
+- Debugging experience
+- Documentation (rustdoc, docs.rs)
+- Build system (cargo)
+- Package management (crates.io)
+- New language features
+- Rust language and standard library documentation
+
+Priority:
+
+- High Priority
+- Medium Priority
+- Low Priority
+- Should not be prioritised
+
+> **justification**
+>
+> This question gathers data on the communities perceptions of certain aspects of Rust at this point in time.
+
+### Do you think that unimplemented (or nightly only) features should be stabilised in Rust?
+
+Type: select one (optional)
+
+- I think that unimplemented features should be stabilised [`NEXT`](#which-unimplemented-or-nightly-only-features-are-you-looking-for-to-be-stabilized)
+- I wish the Rust project to not add major new features (or slow down the pace of development) [`NEXT`](#which-of-these-problems-do-you-recall-encountering-within-the-last-year)
+
+> **justification**
+>
+> We want to find out if people prefer stability and fewer changes, or if they want to see more features being stabilized.
+
+### Which unimplemented or (nightly only) features are you looking for to be stabilized?
+
+Please mention here features for the *Rust compiler* that are currently behind a feature gate (only available using an unstable/nightly release of the Rust compiler) or a feature that is missing and in your opinion would be beneficial to the Rust ecosystem or to your work. This list excludes other tooling around the compiler such as cargo, rustup, rustfmt, etc.
 
 Type: matrix (optional)
 
 Features:
 
-- [Specialization](https://github.com/rust-lang/rust/issues/31844)
-- [Generators/coroutines](https://github.com/rust-lang/rust/issues/43122)
-- [Async closures](https://github.com/rust-lang/rust/issues/62290)
-- [Async generators/coroutines](https://github.com/rust-lang/rust/pull/118420)
-- [If/while let chains](https://github.com/rust-lang/rust/issues/53667)
-- [Try blocks](https://github.com/rust-lang/rust/issues/31436)
-- [Never type](https://github.com/rust-lang/rust/issues/35121)
-- [Trait aliases](https://github.com/rust-lang/rfcs/blob/master/text/1733-trait-alias.md)
-- [Type Alias Impl Trait (TAIT)](https://rust-lang.github.io/rfcs/2515-type_alias_impl_trait.html)
-- [Associated type defaults](https://rust-lang.github.io/rfcs/2532-associated-type-defaults.html)
-- Generic const expressions
-- [Const trait methods](https://github.com/rust-lang/rust/issues/67792)
-- Compile time reflection
-- Variadic generics
-- [Arbitrary self types](https://github.com/rust-lang/rfcs/blob/master/text/3519-arbitrary-self-types-v2.md)
-- [Enum variant types](https://github.com/rust-lang/lang-team/issues/122)
-- [Allocator trait and better OOM handling](https://github.com/rust-lang/rust/issues/32838)
-- [Stable ABI](https://github.com/rust-lang/rust/issues/111423)
-- [Portable SIMD](https://github.com/rust-lang/portable-simd)
+- Specialization ([RFC#1210](https://github.com/rust-lang/rust/issues/31844))
+- Generators/coroutines ([RFC#2033](https://github.com/rust-lang/rust/issues/43122))
+- Async closures ([RFC#2532](https://github.com/rust-lang/rust/issues/62290))
+- If/while let chains ([eRFC#2497](https://github.com/rust-lang/rust/issues/53667))
+- Try blocks ([RFC#243](https://github.com/rust-lang/rust/issues/31436))
+- Never type ([RFC#1216](https://github.com/rust-lang/rust/issues/35121))
+- Improved traits (trait alias, implied bounds, associated type defaults)
+- Improved const (generic const expressions, const expr for custom types, const trait methods)
+- Compile time reflection (variadic generics)
+- Enum variant types ([RFC#2593](https://github.com/rust-lang/lang-team/issues/122))
+- Allocator trait, better OOM handling (https://github.com/rust-lang/rust/issues/32838)
+- Stable ABI (https://github.com/rust-lang/rust/issues/111423)
 
 Priority:
 
-- Would unblock my use-case
-- Would improve my code
-- Don't need it
-- Don't know what it is
+- High Priority
+- Medium Priority
+- Low Priority
+- Should not be prioritised
 
 ### Are there any features not mentioned above that you would like to be prioritised?
 
-Type: free form (optional)
+Type: free text
 
 > **justification**
 >
 > Allow the cohort to mention specific language features they might be eagerly waiting for, see https://github.com/rust-lang/surveys/pull/234/files#r1347633041
 
-### Which of the following aspects of Rust present non-trivial problems to your programming productivity?
+### Which of these problems do you recall encountering within the last year?
 
-Assess only challenges that you think are impacting your work. If you do not select anything for a given row, we will assume that you do not know or do not care about that aspect.
+Type: select all that apply (optional)
 
-Type: matrix (optional)
-
-Challenges:
-
-- Implementing logic for tuples of various sizes
-- Splitting code across crates (e.g. orphan rule)
-- Having to implement Iterator manually
+- Implementing things on tuples
+- Splitting things across crates
+- Having to do iterator implementations manually
 - Not being able to do enough in const fn
-- Implementing dynamic library plugins
-- Interoperating with other languages (e.g. C or C++)
-- Achieving structured concurrency with async code
-- Writing executor-agnostic async code
-- Writing correct unsafe code
-- Borrow checker not allowing valid code
-- Slow runtime performance
-- Slow compilation
-- Large binary size of compiled artifacts
-- High disk space usage (e.g. the size of the target folder)
-- Encountering compiler bugs (e.g. ICEs a.k.a. internal compiler errors or miscompilations)
-- Encountering opaque/unclear compiler error messages
-- Subpar IDE support (e.g. some errors are not shown or analysis is slow)
-- Subpar debugging experience (e.g. missing value visualizations or async stacktraces)
-- Lacking documentation of the Rust language or the standard library
-
-Options:
-
-- Big problem for me
-- Could be improved, but does not limit me
-- Not an issue for me at all
+- Needing to drop down to C ABI for rust plugins
+- Async
+- Traits and generics
+- Borrow checker
+- Macros
+- Other (please specify)
 
 > **justification**
 >
-> This question tries to get insights on what people wish the Rust project would improve.
-
-### Are there any challenges not mentioned above that affect your Rust programming productivity?
-
-Type: free form (optional)
-
-> **justification**
->
-> Allow the cohort to mention other challenges.
-
-### Which features stabilized in the past 12 months do you use the most?
-
-The text in the parentheses shows in which Rust version was the feature stabilized.
-
-Type: matrix (optional)
-
-Features:
-
-- [async fn in traits](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits.html) (1.75)
-- [Return position impl Trait in traits](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits.html) (1.75)
-- [C-string literals](https://blog.rust-lang.org/2024/03/21/Rust-1.77.0.html#c-string-literals) (1.77)
-- [Recursion in async fn](https://blog.rust-lang.org/2024/03/21/Rust-1.77.0.html#support-for-recursion-in-async-fn) (1.77)
-- [offset_of! macro](https://blog.rust-lang.org/2024/03/21/Rust-1.77.0.html#offset_of) (1.77)
-- [#[diagnostic] attribute](https://blog.rust-lang.org/2024/05/02/Rust-1.78.0.html#diagnostic-attributes) (1.78)
-- [Inline const expressions](https://blog.rust-lang.org/2024/06/13/Rust-1.79.0.html#inline-const-expressions) (1.79)
-- [Bounds in associated type position](https://blog.rust-lang.org/2024/06/13/Rust-1.79.0.html#bounds-in-associated-type-position) (1.79)
-- [LazyCell and LazyLock](https://blog.rust-lang.org/2024/07/25/Rust-1.80.0.html#lazycell-and-lazylock) (1.80)
-- [Exclusive ranges in patterns](https://blog.rust-lang.org/2024/07/25/Rust-1.80.0.html#exclusive-ranges-in-patterns) (1.80)
-- [Error trait in core](https://blog.rust-lang.org/2024/09/05/Rust-1.81.0.html#coreerrorerror) (1.81)
-- [#[expect(lint)] and lint reasons](https://blog.rust-lang.org/2024/09/05/Rust-1.81.0.html#expectlint) (1.81)
-- [Precise capturing syntax](https://blog.rust-lang.org/2024/10/17/Rust-1.82.0.html#precise-capturing-use-syntax) (1.82)
-- [&raw pointers](https://blog.rust-lang.org/2024/10/17/Rust-1.82.0.html#native-syntax-for-creating-a-raw-pointer) (1.82)
-
-Usage:
-
-- I use this feature
-- I cannot use this feature yet
-- I do not need this feature
-- I did not know it was stabilized
-- I do not know what it is
+> Conversely, try asking which /problems/ they encountered and let the Rust project figure out what is needed to improve in these areas
 
 ### How do you build your Rust projects?
 
@@ -497,6 +414,27 @@ Type: select all that apply (optional)
 >
 > It could be interesting to know how many people use crates.io vs some custom/local/company registry, and how many people are even aware of what registry do they use. See issue surveys#236.
 
+### Do you agree with the following statements on Rust stability?
+
+Type: matrix (optional)
+
+Statements:
+
+- I can upgrade the *stable* compiler version without fear of my code failing to compile
+- I can upgrade the *nightly* compiler version without fear of my code failing to compile
+- Upgrading to a new *stable* compiler version requires either no changes or extremely small & easy changes to my code
+- Upgrading to a new *nightly* compiler version requires either no changes or extremely small & easy changes to my code
+
+Rating:
+
+- Agree
+- Disagree
+
+> **justification**
+>
+> When want to get an impression of how stable the compiler *feels*. Impressions are more important than hard numbers as
+> not all users define stability in the same way the compiler does.
+
 ## The Rust community
 
 ### Roughly how often do you engage in the following Rust community activities?
@@ -511,10 +449,10 @@ Activities:
 - Participate in conversations about Rust on social media or websites (Hacker News, r/rust, Twitter, LinkedIn, etc.)
 - Attend a Rust meetup or conference (virtual or in-person)
 - Write, comment on, contribute to discussion of, or provide edits to an open RFC
-- Discuss the Rust project in an official chat or forum (internals.rust-lang.org, Rust Zulip, etc.)
+- Discuss the Rust project in an official chat or forum (internals.rust-lang.org, Rust Zulip etc.)
 - Open an issue on any repo in the rust-lang GitHub organization
-- Contribute code changes (including tests) to any open-source Rust project
-- Contribute non-code changes (documentation, comments, etc.) to any open-source Rust project
+- Contribute code changes (including tests) to any project in the rust-lang GitHub organization
+- Contribute non-code changes (documentation, comments, etc.) to any project in the rust-lang GitHub organization
 
 Frequency:
 
@@ -540,7 +478,7 @@ Community Spaces:
 - Rust conferences
 - Rust meetups or local community events
 - Discussions (issues, pull requests, etc.) on a repository *inside* the rust-lang GitHub organization
-- Discussions (issues, pull requests, etc.) on a repository *outside* the rust-lang GitHub organization
+- Discussions (issues, pull requests, etc.) on a Rust repository *outside* of the rust-lang GitHub organization
 
 Choices:
 
@@ -553,14 +491,43 @@ Choices:
 >
 > We'd like to know where people are feeling welcome and the degree to which they are feeling welcome.
 
+
 ### If you indicated that you did not feel welcome in the Rust community, are there any details about your experience that you would like to share with us?
 
 Type: free form (optional)
 
 > **justification**
-> 
-> More detail on the type of situations where people have felt unwelcome can let us better 
+>
+> More detail on the type of situations where people have felt unwelcome can let us better
 > address these issues in the future.
+
+## Rust in Education
+
+### Are you currently taking a course that uses or teaches Rust OR have you taken a course of this type in the last year?
+
+Type: select one (optional)
+
+- Yes, through a university, school, or other educational institution
+- Yes, through my employer, contractor, or consultancy
+- No
+
+> **justification**
+>
+> This question is primarily used to funnel respondents into the more specific questions about the kinds of educational activities they've been a part of.
+
+### If you consumed learning material about Rust, which kind of material did you consume?
+
+Type: select all that apply (optional)
+
+- Books ("The Rust Programming Language", "Rust for Rustaceans", etc.)
+- Online exercises (Rustlings, Rust by Example, etc.)
+- Videos
+- Online courses, webinars
+- Other (please specify)
+
+> **justification**
+>
+> Getting data here seems helpful for guiding users / recommending public content.
 
 ## Rust at work
 
@@ -569,7 +536,7 @@ Type: free form (optional)
 Type: select one
 
 - Yes
-- No [`NEXT`](#please-share-your-assessment-of-the-following-statements-on-rust-employment)
+- No [`NEXT`](#your-opinions-about-rust)
 
 ### Do you write or design software in your work?
 
@@ -577,14 +544,13 @@ Type: select one (optional)
 
 - Yes, primarily as an individual contributor (i.e., non-manager)
 - I primarily manage others who do
-- No [`NEXT`](#to-what-extent-is-rust-currently-being-used-by-your-organisation)
+- No [`NEXT`](#to-what-extent-is-rust-currently-being-used-by-your-company)
 
 ### Are you personally using Rust at work?
 
 Type: select one
 
 - Yes, for the majority of my coding
-- Yes, a few times per week on average
 - Yes, but I only use it occasionally
 - No
 
@@ -594,15 +560,15 @@ Type: select one
 > are using Rust in a professional setting. This is most interesting over time.
 > Answers to this question should be combined with whether the respondent has ever used Rust.
 
-### To what extent is Rust currently being used by your organisation?
+### To what extent is Rust currently being used by your company?
 
 Type: select one
 
-- My organisation makes non-trivial use of Rust (e.g., used in production or in significant tooling)
-- My organisation has experimented with Rust or is considering using it
-- My organisation has not seriously considered Rust for any use [`NEXT`](#approximately-how-many-total-developers-does-your-organisation-employ)
-- I am unsure whether my organisation has considered using or currently uses Rust [`NEXT`](#approximately-how-many-total-developers-does-your-organisation-employ)
-- I don't work for a organisation or my organisation does not develop software of any kind [`NEXT`](#please-share-your-assessment-of-the-following-statements-on-rust-employment)
+- My company makes non-trivial use of Rust (e.g., used in production or in significant tooling)
+- My company has experimented with Rust or is considering using it
+- My company has not seriously considered Rust for any use [`NEXT`](#approximately-how-many-total-developers-does-your-company-employ)
+- I am unsure whether my company has considered using or currently uses Rust [`NEXT`](#approximately-how-many-total-developers-does-your-company-employ)
+- I don't work for a company or my company does not develop software of any kind [`NEXT`](#which-of-the-following-statements-about-rust-do-you-feel-are-true)
 
 > **justification**
 >
@@ -652,12 +618,11 @@ Type: free form (optional)
 >
 > This an opportunity to learn from adopters at companies what they struggle with when adopting Rust.
 
-### In what technology domain(s) is Rust used at your organisation?
+### In what technology domain(s) is Rust used at your company?
 
 Type: select all that apply (optional)
 
 - Audio programming
-- Automotive
 - Blockchain
 - Cloud computing applications
 - Cloud computing infrastructure or utilities
@@ -694,7 +659,7 @@ Type: select all that apply (optional)
 > We want to understand the "shape" of Rust usage, and this question tries to get at that
 > by allowing the respondent to select multiple answers.
 
-### Approximately how many total developers does your organisation employ?
+### Approximately how many total developers does your company employ?
 
 **Note**: Don't worry about being precise here! Go with your instinct.
 
@@ -709,14 +674,14 @@ Type: select one (optional)
 - Over 10,000
 
 > **justification**
-> 
+>
 > This question is not that interesting on its own, but it can be used as a sort of cohort for understanding how answers
 > change depending on the size of the development effort at a company.
 >
 > Previously this question used "employees" instead of "developers". It is more appropriate for us to ask about the amount
 > of developers at a company vs. the amount of people employed in total.
 
-### Is your organisation planning on hiring Rust developers in the next year?
+### Is your company planning on hiring Rust developers in the next year?
 
 Type: select one (optional)
 
@@ -729,27 +694,6 @@ Type: select one (optional)
 >
 > This question assess hiring sentiment. Although there is intrinsic uncertainty, it is easy to answer and forward looking.
 > It will also be interesting to see what the demand for Rust skills from companies is over time.
-
-### Please share your assessment of the following statements on Rust employment
-
-Type: matrix (optional)
-
-Statements:
-
-- It is easy for junior programmers to find jobs that use Rust for the majority of programming
-- It is easy for senior programmers to find jobs that use Rust for the majority of programming
-- Existing Rust jobs are attractive
-
-Rating:
-
-- Agree
-- Neither agree nor disagree
-- Disagree
-
-> **justification**
->
-> The flip side of the question asking whether the respondent's company plans on hiring Rust developers, we
-> want to know how respondents feel the level of demand for and quality of Rust jobs are.
 
 ## Your opinions about Rust
 
@@ -796,11 +740,31 @@ Type: select all that apply (optional)
 >
 > Would be useful for leadership to understand the community's fears.
 
+### Please share your assessment of the following statements on Rust employment.
+
+Type: matrix (optional)
+
+Statements:
+
+- It is easy for qualified applicants to find jobs that use Rust for the majority of programming
+- Existing Rust jobs are attractive
+
+Rating:
+
+- Agree
+- Neither agree nor disagree
+- Disagree
+
+> **justification**
+>
+> The flip side of the question asking whether the respondent's company plans on hiring Rust developers, we
+> want to know how respondents feel the level of demand for and quality of Rust jobs are.
+
 ## About you
 
 See [who](./design/who.md).
 
-Your responses to the following questions will help our reviewers conduct cohort analyses and help us better understand the Rust community. Please answer according to your comfort level.  
+Your responses to the following questions will help our reviewers conduct cohort analyses and help us better understand the Rust community. Please answer according to your comfort level.
 
 ### Do you consider yourself a member of a group that is underrepresented or marginalized in technology?
 
@@ -815,13 +779,13 @@ Type: select one
 Type: select all that apply (optional)
 
 - Cultural beliefs
-- Disabled (physically, mentally, or otherwise)
+- Disabled (physically, mentally or otherwise)
 - Neurodivergent
 - Educational background
 - Language
 - Lesbian, gay, bisexual, queer or otherwise non-heterosexual
 - Non-binary gender
-- Older or younger than the average developers I know
+- Older or younger than the average developer I know
 - Political beliefs
 - Racial or ethnic minority
 - Religious beliefs
@@ -854,7 +818,7 @@ Type: select one (optional)
 - < 1 year
 - < 3 years
 - < 5 years
-- < 10 years
+- < 10 year
 - > 10 years
 
 ### Where do you live?
@@ -871,7 +835,7 @@ Type: select one (optional)
 
 ### As you selected "Other" from the list of countries above, please enter your territory of residence below:
 
-Type: free form
+Type: free text
 
 ### In what ways are you comfortable communicating about technical topics in English?
 
@@ -888,7 +852,7 @@ Type: select all that apply (optional)
 > We want to understand self reported feeling of comfort and capability of communication
 > of English since a large portion of the Rust community is and likely will always be in English.
 
-### In which language(s) are you most comfortable when consuming existing technical content (e.g. blog posts, documentation, etc.)?
+### What is/are your preferred language(s) for technical communication?
 
 **IMPORTANT**: Your answer should reflect your **preference** and **not** what you are capable of communicating in. For example, if you feel comfortable and capable of consuming technical communication in both English and Korean, but you always prefer Korean, you should *only* answer Korean as that is your preference.
 
@@ -920,7 +884,7 @@ Type: free form (optional)
 
 > **justification**
 >
-> While it's unlikely we'll receive any one piece of feedback from this question that will prove to be super useful, 
+> While it's unlikely we'll receive any one piece of feedback from this question that will prove to be super useful,
 > having it in the survey can still be useful. It can help us decide on new questions or perspectives that we want to
 > try to capture in future surveys. It also gives respondents a place to give thanks or share a particular opinion they
 > hold which can be useful in and of itself.
